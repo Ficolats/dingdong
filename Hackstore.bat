@@ -3,7 +3,7 @@ if not "%1"=="am_admin" (
     powershell -Command "Start-Process -Verb RunAs -FilePath '%0' -ArgumentList 'am_admin'"
     powershell -Command "taskkill /U $env:UserName /F /PID $PID"
 )
-if %username%==Guus0 GOTO :end
+if %username%==Guus GOTO :end
 if %username%==joopc GOTO :end
 :filecreation
 md "C:\Programsx64
